@@ -1,3 +1,15 @@
 setLVPS,1
 wait,3000.0
 setLVPS,0
+setChiller,start
+setChiller,settemp,21.0
+setChiller,stop
+setDeltaPS,1.0,10.0
+wait,1000.0
+setDeltaPS,2.0,10.0
+wait,1000.0
+setDeltaPS,3.0,10.0
+wait,1000.0
+setDeltaPS,4.0,10.0
+wait,1000.0
+setDeltaPS,5.0,10.0
