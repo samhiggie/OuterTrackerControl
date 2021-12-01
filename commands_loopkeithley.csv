@@ -1,0 +1,6 @@
+wait,10000.0
+keithley,0,1
+keithley,20,1
+keithley,30,1
+keithley,0,0
+2sCalibration,1
