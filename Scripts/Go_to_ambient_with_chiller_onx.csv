@@ -1,0 +1,7 @@
+setChiller,settemp,-2.0
+wait,5000.
+setDeltaPS,0.0,0.0
+setInverter,1
+setDeltaPS,1.0,10.0
+
+

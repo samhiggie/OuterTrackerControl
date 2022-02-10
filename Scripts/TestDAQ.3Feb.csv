@@ -1,0 +1,16 @@
+setLVPS,0.0
+wait,3000.0
+setLVPS,1
+wait,3000.0
+keithleynew,-10
+wait,1000.0
+keithleynew,-50
+wait,1000.0
+keithleynew,-100
+wait,1000.0
+keithleynew,-150
+wait,1000.0
+keithleynew,-200
+wait,1000.0
+2sCalibration,1
+setLVPS,0.0

@@ -1,0 +1,46 @@
+#assuming everything was off and at ambient
+#get to start conditions with chiller at -10.5C
+#Delta in heating mode
+#should have module at near ambient
+#
+#start by ramping up Keithley (needs to have been brought to
+# 300V previously with low current)
+keithleynew,-10
+wait,4000.0
+keithleynew,-50
+wait,4000.0
+keithleynew,-100
+wait,4000.0
+keithleynew,-150
+wait,4000.0
+keithleynew,-200
+wait,4000.0
+keithleynew,-250
+wait,4000.0
+keithleynew,-300
+wait,4000.
+#start chiller and set to -10.5C
+setChiller,start
+setChiller,settemp,-10.5
+#wait 3 min before starting Peltier heating
+wait,180000.
+setDeltaPS,0.0,0.0
+#set to heat mode
+setInverter,1
+#ramp Delta slowly to value needed to reach equilib.
+setDeltaPS,1.0,10.0
+#steps of 3 minutes
+wait,180000.0
+setDeltaPS,2.0,10.0
+wait,180000.0
+setDeltaPS,3.0,10.0
+wait,180000.0
+setDeltaPS,4.0,10.0
+wait,180000.0
+setDeltaPS,5.0,10.0
+wait,180000.0
+setDeltaPS,6.0,10.0
+wait,180000.0
+setDeltaPS,7.2,10.0
+#wait 5 minutes to reach equilibrium
+wait,300000.0

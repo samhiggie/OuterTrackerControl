@@ -1,0 +1,15 @@
+setDeltaPS,6.0,10.0
+wait,2000.
+setDeltaPS,5.0,10.0
+wait,2000.
+setDeltaPS,4.0,10.0
+wait,2000.
+setDeltaPS,3.0,10.0
+wait,2000.
+setDeltaPS,2.0,10.0
+wait,2000.
+setDeltaPS,1.0,10.0
+wait,2000.
+setDeltaPS,0.0,0.0
+
+

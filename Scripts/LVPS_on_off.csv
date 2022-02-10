@@ -1,0 +1,5 @@
+setLVPS,0
+wait,5000.
+setLVPS,1
+wait,10000.0
+setLVPS,0

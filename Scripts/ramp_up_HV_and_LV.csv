@@ -1,0 +1,17 @@
+keithleynew,-10
+wait,5000.0
+keithleynew,-50
+wait,10000.0
+keithleynew,-100
+wait,10000.0
+keithleynew,-150
+wait,10000.0
+keithleynew,-200
+wait,10000.0
+keithleynew,-250
+wait,10000.0
+keithleynew,-300
+wait,10000.0
+setLVPS,1
+wait,5000.0
+
