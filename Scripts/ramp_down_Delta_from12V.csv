@@ -1,11 +1,3 @@
-setDeltaPS,15.0,15.0
-wait,2000.
-setDeltaPS,14.0,15.0
-wait,2000.
-setDeltaPS,13.0,15.0
-wait,2000.
-setDeltaPS,12.0,15.0
-wait,2000.
 setDeltaPS,11.0,15.0
 wait,2000.
 setDeltaPS,10.0,15.0

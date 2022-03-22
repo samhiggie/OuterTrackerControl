@@ -1,3 +1,5 @@
-setDeltaPS,1,5
-wait,5000
+setDeltaPS,0,0
+wait,2000
+setDeltaPS,1,15
+wait,2000
 setDeltaPS,0,0

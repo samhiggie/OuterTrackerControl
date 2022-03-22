@@ -1,0 +1,7 @@
+setDeltaPS,10.,15.0
+wait,5000.
+setDeltaPS,12.,15.0
+wait,120000.
+setDeltaPS,10.,15.0
+wait,5000.
+setDeltaPS,7.5,15.0

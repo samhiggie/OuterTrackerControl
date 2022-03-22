@@ -1,0 +1,57 @@
+#one cycle starting from ambient with chiller at -10.5
+#DON'T use if chiller not at -10.5 and Delta at 7.2V
+#Delta should be at 7.5, ramp down
+setDeltaPS,6.,15.
+wait,5000.
+setDeltaPS,4.,15.
+wait,5000.
+setDeltaPS,2.,15.
+wait,5000.
+setDeltaPS,0.,15.
+#switch to cooling mode
+setInverter,0
+wait,1000.
+# very short cold ramp
+setDeltaPS,2.0,15.0
+wait,5000.0
+setDeltaPS,4.0,15.0
+wait,5000.
+setDeltaPS,6.0,15.
+#wait a minute at max power
+wait,60000.0
+#ramp down Delta
+setDeltaPS,4.0,15.
+wait,5000.0
+setDeltaPS,2.0,15.0
+wait,5000.0
+setDeltaPS,0.0,15.0
+wait,5000.0
+#now set Inverter to heating mode
+setInverter,1
+wait,1000.0
+#now ramp up Delta to get to plateau
+setDeltaPS,2.0,15.0
+wait,5000.
+setDeltaPS,4.0,15.0
+wait,5000.
+setDeltaPS,6.0,15.
+wait,5000.
+setDeltaPS,8.0,15.
+#wait for 2 minutes
+wait,120000.0
+setDeltaPS,7.0,15.
+#wait for 5 minutes
+wait,300000.
+#go back to ambient
+setDeltaPS,8.0,15.0
+wait,5000.0
+setDeltaPS,10.0,15.0
+wait,5000.
+#slight overdrive for 3 minutes
+setDeltaPS,12.,15.
+wait,180000.0
+#go to standard ambient setting
+setDeltaPS,10.,15.
+wait,5000.
+setDeltaPS,7.5,15.0
+

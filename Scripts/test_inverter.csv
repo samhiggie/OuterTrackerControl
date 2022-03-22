@@ -1,0 +1,17 @@
+setDeltaPS,1.0,15.0
+wait,3000
+setInverter,1
+wait,3000
+setInverter,0
+setDeltaPS,2.0,15.0
+wait,3000
+setDeltaPS,3.0,15.0
+setInverter,1
+wait,3000
+setInverter,0
+setDeltaPS,1.0,15.0
+setDeltaPS,0.0,15.0
+wait,3000
+setInverter,1
+wait,3000
+setInverter,0

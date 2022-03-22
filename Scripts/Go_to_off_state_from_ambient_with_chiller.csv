@@ -1,0 +1,13 @@
+#go from ambient with chiller at -10C to off state for #chiller and Delta
+setChiller,settemp,20.
+wait,3000
+setChiller,stop
+wait,3000
+#ramp down Delta
+setDeltaPS,6,15
+wait,3000
+setDeltaPS,4,15
+wait,3000
+setDeltaPS,2,15
+wait,3000
+setDeltaPS,0,0

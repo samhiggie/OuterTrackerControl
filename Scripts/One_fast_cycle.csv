@@ -1,0 +1,31 @@
+#one cycle starting from ambient with chiller at ambient
+#first set chiller to correct temp in case it was changed
+setChiller,start
+setChiller,settemp,20.
+# inverter shold be for cold
+setInverter,0
+#Delta should be at 0
+setDeltaPS,0.,15.
+# very short cold ramp
+setDeltaPS,2.0,15.0
+wait,10000.0
+setDeltaPS,4.0,15.0
+#wait for 5 min 
+wait,300000.0
+#ramp down Delta
+setDeltaPS,2.0,15.0
+wait,10000.0
+setDeltaPS,0.0,15.0
+wait,10000.0
+#now set Inverter to heating mode
+setInverter,1
+wait,1000.0
+#now ramp up Delta to heat a bit
+setDeltaPS,2.0,15.0
+wait,10000.0
+setDeltaPS,4.0,15.0
+#wait for 1 min then ramp back to 0
+wait,60000.0
+setDeltaPS,2.0,15.0
+wait,10000.0
+setDeltaPS,0.0,15.0

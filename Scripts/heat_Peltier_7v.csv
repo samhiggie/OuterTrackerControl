@@ -1,0 +1,15 @@
+#set to heat mode, ramp to 7.2V
+setInverter,1
+setDeltaPS,1.0,10.0
+wait,1000.0
+setDeltaPS,2.0,10.0
+wait,1000.0
+setDeltaPS,3.0,10.0
+wait,1000.0
+setDeltaPS,4.0,10.0
+wait,1000.0
+setDeltaPS,5.0,10.0
+wait,1000.0
+setDeltaPS,6.0,10.0
+wait,1000.0
+setDeltaPS,7.2,10.0
