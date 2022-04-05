@@ -2,7 +2,7 @@
 #get to start conditions with chiller at -10.5C
 #Delta in heating mode
 #should have module at near ambient
-#no Keithley for this test
+#don't control Keithley (assumed already on or not in use)
 #start chiller and set to -10.5C
 setChiller,start
 setChiller,settemp,-10.5

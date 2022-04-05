@@ -1,1 +1,5 @@
+setLVPS,1
+wait,3000.0
 2sCalibration,1
+wait,2000.0
+setLVPS,0
